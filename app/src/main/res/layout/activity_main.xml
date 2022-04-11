@@ -8,49 +8,45 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:id="@+id/relative"
         android:background="#a4f1f7"
-        android:padding="20dp">
+        android:orientation="vertical"
+        >
 
         <ImageView
+            android:layout_marginTop="40dp"
             android:id="@+id/image"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:layout_marginTop="30dp"
-            android:layout_centerHorizontal="true"
-
-            android:src="@drawable/profiledp">
-
-        </ImageView>
+            android:layout_gravity="center"
+            android:src="@drawable/profiledp"/>
 
         <TextView
+            android:layout_marginTop="20dp"
             android:id="@+id/fullname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/image"
-            android:layout_centerVertical="true"
             android:fontFamily="sans-serif-condensed-medium"
             android:includeFontPadding="false"
-            android:text="PROFILE"
+            android:layout_gravity="center"
+            android:text="Devarapallilu"
             android:textSize="40dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed-medium"
             android:text="profile"
             android:textSize="30dp"
             android:includeFontPadding="false"
-
-            android:layout_below="@+id/fullname"
-            android:layout_centerVertical="true">
-        </TextView>
-    </RelativeLayout>
+            />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -162,10 +158,12 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Fullname">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:background="@color/white"
                 android:layout_height="wrap_content"
                 android:text="HARIKA"
                 android:drawableLeft="@drawable/ic_person"
@@ -184,6 +182,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
                 android:text="hi@gmail.com"
                 android:drawableLeft="@drawable/ic_mail"
                 android:drawablePadding="7dp">
@@ -201,6 +200,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="123456789"
+                android:background="@color/white"
                 android:drawableLeft="@drawable/ic_phone"
                 android:drawablePadding="7dp">
 
